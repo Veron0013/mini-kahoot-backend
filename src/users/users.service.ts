@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import {
   Injectable,
   NotFoundException,
@@ -19,8 +21,11 @@ export class UsersService {
       .exec();
     if (existing) throw new ConflictException('Email already in use');
 
-    const salt = await bcrypt.genSalt(10);
-    const passwordHash = await bcrypt.hash(createDto.password, salt);
+    const salt = (await bcrypt.genSalt(10)) as string;
+    const passwordHash = (await bcrypt.hash(
+      createDto.password,
+      salt,
+    )) as string;
 
     const created = new this.userModel({
       username: createDto.username,
