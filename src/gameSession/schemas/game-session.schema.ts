@@ -11,7 +11,7 @@ interface Answer {
   isCorrect: boolean; // правильна відповідь чи ні
 }
 
-@Schema({ timestamps: true })
+@Schema({ collection: 'game_sessions', timestamps: true })
 export class GameSession {
   @Prop({ required: true, ref: 'user' })
   userId: Types.ObjectId; // користувач
@@ -32,6 +32,12 @@ export class GameSession {
 
   @Prop({ default: 0 })
   totalScore: number; // поточний загальний рахунок сесії
+
+  @Prop({ type: Date, default: Date.now })
+  startedAt: Date;
+
+  @Prop({ type: Date, default: null })
+  finishedAt?: Date;
 }
 
 export const GameSessionSchema = SchemaFactory.createForClass(GameSession);

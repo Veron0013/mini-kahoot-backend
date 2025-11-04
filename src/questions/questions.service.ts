@@ -42,7 +42,7 @@ export class QuestionService {
   }
 
   async findById(questionId: string) {
-    const question = await this.questionModel.findById(questionId);
+    const question = await this.questionModel.findById(questionId).exec();
     if (!question) throw new NotFoundException('Question not found');
     return question;
   }

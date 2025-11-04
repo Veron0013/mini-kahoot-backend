@@ -1,6 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { LanguageEnum } from '../../common/types/common.types';
+import {
+  LanguageEnum,
+  QuestionTagsEnum,
+} from '../../common/types/common.types';
 
 export type QuestionDocument = Question & Document;
 
@@ -8,16 +11,6 @@ export type QuestionDocument = Question & Document;
 export class Question {
   @Prop({ required: true, unique: true })
   name: string; // унікальний ключ, наприклад "js_scope_let"
-
-  @Prop({
-    required: true,
-    type: {
-      question: { type: String, required: true },
-    },
-  })
-  value: {
-    question: string; // “en|uk pair”
-  };
 
   @Prop({ required: true, min: 1, max: 5 })
   difficulty: number;
@@ -49,8 +42,8 @@ export class Question {
   @Prop({ required: true })
   answerDelay: number;
 
-  @Prop([String])
-  tags: string[];
+  @Prop({ type: [String], enum: Object.values(QuestionTagsEnum) })
+  tags: QuestionTagsEnum[];
 }
 
 export const QuestionSchema = SchemaFactory.createForClass(Question);
