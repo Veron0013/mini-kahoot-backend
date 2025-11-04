@@ -10,3 +10,5 @@ export enum LanguageEnum {
   RU = 'ru',
   ZH = 'zh',
 }
+
+export const LanguageArray: string[] = Object.values(LanguageEnum);
