@@ -12,3 +12,36 @@ export enum LanguageEnum {
 }
 
 export const LanguageArray: string[] = Object.values(LanguageEnum);
+
+export enum QuestionTagsEnum {
+  HTML = 'HTML',
+  Structure = 'Structure',
+  Basics = 'Basics',
+  CSS = 'CSS',
+  Flexbox = 'Flexbox',
+  Layout = 'Layout',
+  React = 'React',
+  Hooks = 'Hooks',
+  State = 'State',
+  NextJS = 'NextJS',
+  Static = 'Static',
+  Rendering = 'Rendering',
+  NodeJS = 'NodeJS',
+  Async = 'Async',
+  Promises = 'Promises',
+  Forms = 'Forms',
+  Grid = 'Grid',
+  useEffect = 'useEffect',
+  Routing = 'Routing',
+  Dynamic = 'Dynamic',
+  NPM = 'NPM',
+  Modules = 'Modules',
+  JavaScript = 'JavaScript',
+  DOM = 'DOM',
+  Selectors = 'Selectors',
+  Animation = 'Animation',
+  Keyframes = 'Keyframes',
+  Props = 'Props',
+  Components = 'Components',
+  EventLoop = 'EventLoop',
+}

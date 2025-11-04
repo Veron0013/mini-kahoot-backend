@@ -1,0 +1,497 @@
+[
+  {
+    "name": "html_structure_001",
+    "difficulty": 1,
+    "bonus": 3,
+    "translations": {
+      "en": {
+        "question": "Which HTML element is used to define the main content of a webpage?",
+        "options": ["<content>", "<main>", "<section>", "<body>"]
+      },
+      "ua": {
+        "question": "Який HTML-елемент використовується для визначення основного вмісту вебсторінки?",
+        "options": ["<content>", "<main>", "<section>", "<body>"]
+      },
+      "pl": {
+        "question": "Który element HTML służy do zdefiniowania głównej zawartości strony?",
+        "options": ["<content>", "<main>", "<section>", "<body>"]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["HTML", "Structure", "Basics"]
+  },
+  {
+    "name": "css_flex_002",
+    "difficulty": 2,
+    "bonus": 4,
+    "translations": {
+      "en": {
+        "question": "Which CSS property defines the alignment along the main axis in Flexbox?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "align-content",
+          "flex-align"
+        ]
+      },
+      "ua": {
+        "question": "Яка CSS-властивість визначає вирівнювання вздовж головної осі у Flexbox?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "align-content",
+          "flex-align"
+        ]
+      },
+      "pl": {
+        "question": "Która właściwość CSS definiuje wyrównanie wzdłuż głównej osi w Flexboxie?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "align-content",
+          "flex-align"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["CSS", "Flexbox", "Layout"]
+  },
+  {
+    "name": "react_state_003",
+    "difficulty": 2,
+    "bonus": 6,
+    "translations": {
+      "en": {
+        "question": "What is the main purpose of React useState hook?",
+        "options": [
+          "To manage side effects",
+          "To store component state",
+          "To memoize values",
+          "To update DOM manually"
+        ]
+      },
+      "ua": {
+        "question": "Для чого використовується хук useState у React?",
+        "options": [
+          "Для керування побічними ефектами",
+          "Для зберігання стану компонента",
+          "Для кешування значень",
+          "Для ручного оновлення DOM"
+        ]
+      },
+      "pl": {
+        "question": "Do czego służy hook useState w React?",
+        "options": [
+          "Do zarządzania efektami ubocznymi",
+          "Do przechowywania stanu komponentu",
+          "Do zapamiętywania wartości",
+          "Do ręcznej aktualizacji DOM"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["React", "Hooks", "State"]
+  },
+  {
+    "name": "next_static_004",
+    "difficulty": 3,
+    "bonus": 7,
+    "translations": {
+      "en": {
+        "question": "Which Next.js function is used for static site generation?",
+        "options": [
+          "getServerSideProps",
+          "getStaticProps",
+          "getInitialProps",
+          "getStaticPaths"
+        ]
+      },
+      "ua": {
+        "question": "Яка функція Next.js використовується для статичної генерації сторінок?",
+        "options": [
+          "getServerSideProps",
+          "getStaticProps",
+          "getInitialProps",
+          "getStaticPaths"
+        ]
+      },
+      "pl": {
+        "question": "Która funkcja Next.js służy do statycznego generowania stron?",
+        "options": [
+          "getServerSideProps",
+          "getStaticProps",
+          "getInitialProps",
+          "getStaticPaths"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["NextJS", "Static", "Rendering"]
+  },
+  {
+    "name": "node_async_005",
+    "difficulty": 3,
+    "bonus": 8,
+    "translations": {
+      "en": {
+        "question": "Which of the following best describes asynchronous programming in Node.js?",
+        "options": [
+          "Code runs sequentially line by line",
+          "Code executes independently without blocking",
+          "Node.js pauses until task finishes",
+          "It uses multiple threads for each request"
+        ]
+      },
+      "ua": {
+        "question": "Що найкраще описує асинхронне програмування у Node.js?",
+        "options": [
+          "Код виконується послідовно рядок за рядком",
+          "Код виконується незалежно, не блокуючи потік",
+          "Node.js зупиняється, поки завдання не завершиться",
+          "Використовує окремий потік для кожного запиту"
+        ]
+      },
+      "pl": {
+        "question": "Które zdanie najlepiej opisuje asynchroniczne programowanie w Node.js?",
+        "options": [
+          "Kod wykonuje się linia po linii",
+          "Kod działa niezależnie bez blokowania",
+          "Node.js czeka na zakończenie zadania",
+          "Używa wielu wątków dla każdego żądania"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["NodeJS", "Async", "Promises"]
+  },
+  {
+    "name": "js_promise_006",
+    "difficulty": 3,
+    "bonus": 6,
+    "translations": {
+      "en": {
+        "question": "Which method handles both fulfillment and rejection of a Promise?",
+        "options": ["then()", "catch()", "finally()", "then() and catch()"]
+      },
+      "ua": {
+        "question": "Який метод обробляє як виконання, так і відхилення промісу?",
+        "options": ["then()", "catch()", "finally()", "then() і catch()"]
+      },
+      "pl": {
+        "question": "Która metoda obsługuje zarówno spełnienie, jak i odrzucenie obietnicy (Promise)?",
+        "options": ["then()", "catch()", "finally()", "then() i catch()"]
+      }
+    },
+    "correctIndex": 2,
+    "questionDelay": 25,
+    "tags": ["JavaScript", "Promises", "Async"]
+  },
+  {
+    "name": "html_form_007",
+    "difficulty": 2,
+    "bonus": 5,
+    "translations": {
+      "en": {
+        "question": "Which attribute is required to send data from an HTML form?",
+        "options": ["method", "name", "action", "submit"]
+      },
+      "ua": {
+        "question": "Який атрибут обов’язковий для відправлення даних з HTML-форми?",
+        "options": ["method", "name", "action", "submit"]
+      },
+      "pl": {
+        "question": "Który atrybut jest wymagany do wysyłania danych z formularza HTML?",
+        "options": ["method", "name", "action", "submit"]
+      }
+    },
+    "correctIndex": 2,
+    "questionDelay": 25,
+    "tags": ["HTML", "Forms"]
+  },
+  {
+    "name": "css_grid_008",
+    "difficulty": 3,
+    "bonus": 7,
+    "translations": {
+      "en": {
+        "question": "Which CSS property defines the columns in a grid layout?",
+        "options": [
+          "grid-template-rows",
+          "grid-template-columns",
+          "grid-auto-flow",
+          "grid-gap"
+        ]
+      },
+      "ua": {
+        "question": "Яка CSS-властивість визначає колонки у сітковому макеті?",
+        "options": [
+          "grid-template-rows",
+          "grid-template-columns",
+          "grid-auto-flow",
+          "grid-gap"
+        ]
+      },
+      "pl": {
+        "question": "Która właściwość CSS definiuje kolumny w układzie siatki (grid)?",
+        "options": [
+          "grid-template-rows",
+          "grid-template-columns",
+          "grid-auto-flow",
+          "grid-gap"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["CSS", "Grid", "Layout"]
+  },
+  {
+    "name": "react_effect_009",
+    "difficulty": 4,
+    "bonus": 8,
+    "translations": {
+      "en": {
+        "question": "What is the main purpose of useEffect in React?",
+        "options": [
+          "To handle side effects in components",
+          "To store local state",
+          "To optimize rendering",
+          "To update props"
+        ]
+      },
+      "ua": {
+        "question": "Для чого використовується хук useEffect у React?",
+        "options": [
+          "Для обробки побічних ефектів у компонентах",
+          "Для зберігання локального стану",
+          "Для оптимізації рендерингу",
+          "Для оновлення пропсів"
+        ]
+      },
+      "pl": {
+        "question": "Do czego służy hook useEffect w React?",
+        "options": [
+          "Do obsługi efektów ubocznych w komponentach",
+          "Do przechowywania lokalnego stanu",
+          "Do optymalizacji renderowania",
+          "Do aktualizacji propsów"
+        ]
+      }
+    },
+    "correctIndex": 0,
+    "questionDelay": 25,
+    "tags": ["React", "Hooks", "useEffect"]
+  },
+  {
+    "name": "next_routing_010",
+    "difficulty": 3,
+    "bonus": 9,
+    "translations": {
+      "en": {
+        "question": "In Next.js, which folder defines dynamic routes?",
+        "options": [
+          "pages/[param]",
+          "pages/params",
+          "routes/dynamic",
+          "app/router"
+        ]
+      },
+      "ua": {
+        "question": "У Next.js яка папка визначає динамічні маршрути?",
+        "options": [
+          "pages/[param]",
+          "pages/params",
+          "routes/dynamic",
+          "app/router"
+        ]
+      },
+      "pl": {
+        "question": "W Next.js, który folder definiuje dynamiczne trasy?",
+        "options": [
+          "pages/[param]",
+          "pages/params",
+          "routes/dynamic",
+          "app/router"
+        ]
+      }
+    },
+    "correctIndex": 0,
+    "questionDelay": 25,
+    "tags": ["NextJS", "Routing", "Dynamic"]
+  },
+  {
+    "name": "node_modules_011",
+    "difficulty": 2,
+    "bonus": 4,
+    "translations": {
+      "en": {
+        "question": "Where are dependencies installed by default in a Node.js project?",
+        "options": ["src/", "package.json", "node_modules/", "lib/"]
+      },
+      "ua": {
+        "question": "Куди за замовчуванням встановлюються залежності у Node.js проєкті?",
+        "options": ["src/", "package.json", "node_modules/", "lib/"]
+      },
+      "pl": {
+        "question": "Gdzie domyślnie instalowane są zależności w projekcie Node.js?",
+        "options": ["src/", "package.json", "node_modules/", "lib/"]
+      }
+    },
+    "correctIndex": 2,
+    "questionDelay": 25,
+    "tags": ["NodeJS", "NPM", "Modules"]
+  },
+  {
+    "name": "js_dom_012",
+    "difficulty": 2,
+    "bonus": 5,
+    "translations": {
+      "en": {
+        "question": "Which method selects the first element that matches a CSS selector?",
+        "options": [
+          "getElementById()",
+          "getElementsByClassName()",
+          "querySelector()",
+          "querySelectorAll()"
+        ]
+      },
+      "ua": {
+        "question": "Який метод вибирає перший елемент, що відповідає CSS-селектору?",
+        "options": [
+          "getElementById()",
+          "getElementsByClassName()",
+          "querySelector()",
+          "querySelectorAll()"
+        ]
+      },
+      "pl": {
+        "question": "Która metoda wybiera pierwszy element pasujący do selektora CSS?",
+        "options": [
+          "getElementById()",
+          "getElementsByClassName()",
+          "querySelector()",
+          "querySelectorAll()"
+        ]
+      }
+    },
+    "correctIndex": 2,
+    "questionDelay": 25,
+    "tags": ["JavaScript", "DOM", "Selectors"]
+  },
+  {
+    "name": "css_animation_013",
+    "difficulty": 4,
+    "bonus": 8,
+    "translations": {
+      "en": {
+        "question": "Which CSS property defines the name of the keyframe animation?",
+        "options": [
+          "animation-name",
+          "animation-play-state",
+          "animation-delay",
+          "animation-timing-function"
+        ]
+      },
+      "ua": {
+        "question": "Яка CSS-властивість визначає назву keyframe-анімації?",
+        "options": [
+          "animation-name",
+          "animation-play-state",
+          "animation-delay",
+          "animation-timing-function"
+        ]
+      },
+      "pl": {
+        "question": "Która właściwość CSS definiuje nazwę animacji kluczowych klatek (keyframes)?",
+        "options": [
+          "animation-name",
+          "animation-play-state",
+          "animation-delay",
+          "animation-timing-function"
+        ]
+      }
+    },
+    "correctIndex": 0,
+    "questionDelay": 25,
+    "tags": ["CSS", "Animation", "Keyframes"]
+  },
+  {
+    "name": "react_props_014",
+    "difficulty": 2,
+    "bonus": 6,
+    "translations": {
+      "en": {
+        "question": "How are props passed to a child component in React?",
+        "options": [
+          "As HTML attributes",
+          "Using context API",
+          "As function arguments",
+          "Via the Redux store"
+        ]
+      },
+      "ua": {
+        "question": "Як у React передаються props до дочірнього компонента?",
+        "options": [
+          "Як HTML-атрибути",
+          "Через context API",
+          "Як аргументи функції",
+          "Через Redux store"
+        ]
+      },
+      "pl": {
+        "question": "Jak przekazywane są propsy do komponentu potomnego w React?",
+        "options": [
+          "Jako atrybuty HTML",
+          "Za pomocą context API",
+          "Jako argumenty funkcji",
+          "Przez Redux store"
+        ]
+      }
+    },
+    "correctIndex": 0,
+    "questionDelay": 25,
+    "tags": ["React", "Props", "Components"]
+  },
+  {
+    "name": "js_eventloop_015",
+    "difficulty": 5,
+    "bonus": 10,
+    "translations": {
+      "en": {
+        "question": "What is the Event Loop responsible for in JavaScript?",
+        "options": [
+          "Executing synchronous code",
+          "Handling asynchronous callbacks",
+          "Compiling JavaScript",
+          "Managing memory"
+        ]
+      },
+      "ua": {
+        "question": "За що відповідає Event Loop у JavaScript?",
+        "options": [
+          "За виконання синхронного коду",
+          "За обробку асинхронних колбеків",
+          "За компіляцію JavaScript",
+          "За керування пам’яттю"
+        ]
+      },
+      "pl": {
+        "question": "Za co odpowiada Event Loop w JavaScript?",
+        "options": [
+          "Za wykonywanie kodu synchronicznego",
+          "Za obsługę asynchronicznych callbacków",
+          "Za kompilację JavaScriptu",
+          "Za zarządzanie pamięcią"
+        ]
+      }
+    },
+    "correctIndex": 1,
+    "questionDelay": 25,
+    "tags": ["JavaScript", "EventLoop", "Async"]
+  }
+]

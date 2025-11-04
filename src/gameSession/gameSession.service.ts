@@ -12,6 +12,7 @@ import {
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { QuestionService } from '../questions/questions.service';
 import { StartGameSessionDto } from './dto/start-game.dto';
+import { FinishGameSessionDto } from './dto/finish-game.dto';
 
 @Injectable()
 export class GameSessionService {
@@ -90,7 +91,18 @@ export class GameSessionService {
   }
 
   async createSession(dto: StartGameSessionDto) {
-    return this.gameSessionModel.create(dto);
+    return this.gameSessionModel.create({
+      ...dto,
+      startedAt: new Date(),
+    });
+  }
+
+  async finishSession(dto: FinishGameSessionDto) {
+    return this.gameSessionModel.findByIdAndUpdate(
+      dto.sessionId,
+      { finishedAt: new Date() },
+      { new: true, runValidators: true },
+    );
   }
 
   async getAllSessions(userId: string) {

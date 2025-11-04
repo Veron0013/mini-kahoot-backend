@@ -5,6 +5,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './users/users.module';
 import { LoggerModule } from 'nestjs-pino';
+import { QuestionsModule } from './questions/questions.module';
+import { GameSessionModule } from './gameSession/gameSession.module';
 
 @Module({
   imports: [
@@ -26,7 +28,7 @@ import { LoggerModule } from 'nestjs-pino';
           },
           res(res) {
             return {
-              statusCode: res.statusCode,
+              statusCode: res?.statusCode,
             };
           },
         },
@@ -44,6 +46,8 @@ import { LoggerModule } from 'nestjs-pino';
       inject: [ConfigService],
     }),
     UsersModule,
+    QuestionsModule,
+    GameSessionModule,
   ],
   controllers: [AppController],
   providers: [AppService],
