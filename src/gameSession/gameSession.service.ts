@@ -27,9 +27,9 @@ export class GameSessionService {
       throw new BadRequestException('Answer index is required');
     }
 
-    const session = await this.gameSessionModel.findById(gameSessionId);
+    const gameSession = await this.gameSessionModel.findById(gameSessionId);
 
-    if (!session) throw new NotFoundException('Game session not found');
+    if (!gameSession) throw new NotFoundException('Game session not found');
 
     const question = await this.questionsService.findById(dto.questionId);
 
@@ -38,7 +38,7 @@ export class GameSessionService {
     const isCorrect = question.correctIndex === dto.answerIndex;
 
     // Визначаємо поточний streak
-    const previousAnswer = session.answers[session.answers.length - 1];
+    const previousAnswer = gameSession.answers[gameSession.answers.length - 1];
     const currentStreak = isCorrect ? (previousAnswer?.streak ?? 0) + 1 : 0;
 
     // Розрахунок балів з урахуванням streak
@@ -51,7 +51,7 @@ export class GameSessionService {
     );
 
     // Додаємо відповідь в масив answers і апдейтимо totalScore
-    session.answers.push({
+    gameSession.answers.push({
       questionId: new Types.ObjectId(dto.questionId),
       answerTime: dto.answerTime,
       count,
@@ -59,14 +59,14 @@ export class GameSessionService {
       streak: currentStreak,
     });
 
-    session.totalScore += count;
+    gameSession.totalScore += count;
 
-    await session.save();
+    await gameSession.save();
 
     return {
       count,
       isCorrect,
-      totalScore: session.totalScore,
+      totalScore: gameSession.totalScore,
       streak: currentStreak,
     };
   }
