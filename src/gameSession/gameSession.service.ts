@@ -79,9 +79,11 @@ export class GameSessionService {
     difficulty: number,
   ): number {
     if (!isCorrect) return 0;
-    const correctAnswerBonus = 1 + currentStreak / 100 + difficulty / 10; // можна взяти з налаштувань
-    const answerTimeBonus = answerTime * 0.1; // як приклад
-    return questionBonus * correctAnswerBonus - answerTimeBonus;
+    const answerTimeBonus = answerTime * 0.3; // як приклад
+
+    const correctAnswerBonus = 1 + currentStreak / 10 + difficulty / 3;
+
+    return questionBonus * 5 * correctAnswerBonus - answerTimeBonus + 1000;
   }
 
   async findById(gameSessionId: string) {
