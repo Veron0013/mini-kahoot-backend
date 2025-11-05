@@ -1,9 +1,9 @@
 import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
 
 export class SubmitAnswerDto {
-  @IsNotEmpty()
-  @IsString()
-  userId: string;
+  //@IsNotEmpty()
+  //@IsString()
+  //sessionId: string;
 
   @IsNotEmpty()
   @IsString()

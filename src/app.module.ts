@@ -7,6 +7,7 @@ import { UsersModule } from './users/users.module';
 import { LoggerModule } from 'nestjs-pino';
 import { QuestionsModule } from './questions/questions.module';
 import { GameSessionModule } from './gameSession/gameSession.module';
+import { GameInstanceModule } from './game-instance/game-instance.module';
 
 @Module({
   imports: [
@@ -48,6 +49,7 @@ import { GameSessionModule } from './gameSession/gameSession.module';
     UsersModule,
     QuestionsModule,
     GameSessionModule,
+    GameInstanceModule,
   ],
   controllers: [AppController],
   providers: [AppService],
