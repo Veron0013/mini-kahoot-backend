@@ -6,8 +6,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './users/users.module';
 import { QuestionsModule } from './questions/questions.module';
 import { GameSessionModule } from './gameSession/gameSession.module';
+
+import { AuthModule } from './auth/auth.module';
+
 import { GameInstanceModule } from './game-instance/game-instance.module';
 import { GameLoggerModule } from './common/logger/logger.module';
+
 
 @Module({
   imports: [
@@ -26,7 +30,11 @@ import { GameLoggerModule } from './common/logger/logger.module';
     UsersModule,
     QuestionsModule,
     GameSessionModule,
+
+    AuthModule,
+
     GameInstanceModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],
